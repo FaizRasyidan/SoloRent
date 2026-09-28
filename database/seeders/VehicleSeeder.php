@@ -1,0 +1,181 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Vehicle;
+use Illuminate\Database\Seeder;
+
+class VehicleSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $vehicles = [
+            [
+                'slug' => 'honda-vario-160',
+                'name' => 'Honda Vario 160',
+                'category' => 'motor',
+                'transmission' => 'automatic',
+                'seats' => 2,
+                'engine' => '160cc',
+                'baggage' => '18 Liter',
+                'price_per_day' => 85000,
+                'rating' => 4.9,
+                'trips_count' => 2100,
+                'image_url' => 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1525160354320-d8e92641c563?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Honda Vario 160 cocok untuk perjalanan dalam kota Solo dengan posisi berkendara nyaman, bagasi luas, dan konsumsi bahan bakar efisien.',
+                'benefits' => ['2 Helm SNI', 'Jas Hujan', 'STNK', 'Full Tank', 'Kondisi Kendaraan Terawat'],
+                'stock' => 6,
+                'featured' => true,
+            ],
+            [
+                'slug' => 'yamaha-nmax',
+                'name' => 'Yamaha NMAX',
+                'category' => 'motor',
+                'transmission' => 'automatic',
+                'seats' => 2,
+                'engine' => '155cc',
+                'baggage' => '23 Liter',
+                'price_per_day' => 110000,
+                'rating' => 4.9,
+                'trips_count' => 1800,
+                'image_url' => 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Yamaha NMAX dengan jok lebar dan suspensi nyaman. Pilihan tepat untuk perjalanan jauh Solo–Tawangmangu atau Solo–Jogja.',
+                'benefits' => ['2 Helm SNI', 'Jas Hujan', 'STNK', 'Full Tank', 'Kondisi Kendaraan Terawat'],
+                'stock' => 5,
+                'featured' => true,
+            ],
+            [
+                'slug' => 'honda-scoopy',
+                'name' => 'Honda Scoopy',
+                'category' => 'motor',
+                'transmission' => 'automatic',
+                'seats' => 2,
+                'engine' => '110cc',
+                'baggage' => '15 Liter',
+                'price_per_day' => 75000,
+                'rating' => 4.8,
+                'trips_count' => 1400,
+                'image_url' => 'https://images.unsplash.com/photo-1525160354320-d8e92641c563?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1525160354320-d8e92641c563?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Honda Scoopy yang irit dan lincah untuk mobilitas harian di dalam kota. Ringan, mudah parkir, ramah untuk pengendara pemula.',
+                'benefits' => ['2 Helm SNI', 'Jas Hujan', 'STNK', 'Full Tank', 'Kondisi Kendaraan Terawat'],
+                'stock' => 4,
+            ],
+            [
+                'slug' => 'yamaha-aerox',
+                'name' => 'Yamaha Aerox 155',
+                'category' => 'motor',
+                'transmission' => 'automatic',
+                'seats' => 2,
+                'engine' => '155cc',
+                'baggage' => '25 Liter',
+                'price_per_day' => 100000,
+                'rating' => 4.8,
+                'trips_count' => 900,
+                'image_url' => 'https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Yamaha Aerox 155 berkarakter sporty dengan performa responsif. Favorit anak muda untuk keliling kota Solo dan sekitarnya.',
+                'benefits' => ['2 Helm SNI', 'Jas Hujan', 'STNK', 'Full Tank', 'Kondisi Kendaraan Terawat'],
+                'stock' => 1,
+            ],
+            [
+                'slug' => 'toyota-avanza',
+                'name' => 'Toyota Avanza',
+                'category' => 'mobil',
+                'transmission' => 'automatic',
+                'seats' => 7,
+                'engine' => '1.5L',
+                'baggage' => '2 Koper',
+                'price_per_day' => 350000,
+                'rating' => 4.8,
+                'trips_count' => 980,
+                'image_url' => 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Toyota Avanza muat 7 penumpang dengan kabin lega. Andalan keluarga untuk wisata Solo, Tawangmangu, hingga Jogja. Tersedia opsi dengan driver.',
+                'benefits' => ['STNK', 'P3K & Segitiga Pengaman', 'Full Tank', 'Kondisi Kendaraan Terawat', 'Asuransi Unit'],
+                'stock' => 4,
+                'featured' => true,
+            ],
+            [
+                'slug' => 'honda-brio',
+                'name' => 'Honda Brio',
+                'category' => 'mobil',
+                'transmission' => 'automatic',
+                'seats' => 5,
+                'engine' => '1.2L',
+                'baggage' => '1 Koper',
+                'price_per_day' => 300000,
+                'rating' => 4.9,
+                'trips_count' => 760,
+                'image_url' => 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Honda Brio yang lincah dan irit untuk perjalanan kota. Mudah manuver di jalan sempit Solo dan hemat bahan bakar.',
+                'benefits' => ['STNK', 'P3K & Segitiga Pengaman', 'Full Tank', 'Kondisi Kendaraan Terawat', 'Asuransi Unit'],
+                'stock' => 3,
+            ],
+            [
+                'slug' => 'toyota-innova-reborn',
+                'name' => 'Toyota Innova Reborn',
+                'category' => 'mobil',
+                'transmission' => 'automatic',
+                'seats' => 7,
+                'engine' => '2.0L',
+                'baggage' => '3 Koper',
+                'price_per_day' => 550000,
+                'rating' => 4.9,
+                'trips_count' => 640,
+                'image_url' => 'https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Toyota Innova Reborn untuk perjalanan premium rombongan atau korporat. Kabin senyaman MPV kelas atas, sangat cocok dengan driver.',
+                'benefits' => ['STNK', 'P3K & Segitiga Pengaman', 'Full Tank', 'Kondisi Kendaraan Terawat', 'Asuransi Unit', 'Opsi Driver Berpengalaman'],
+                'stock' => 2,
+                'featured' => true,
+            ],
+            [
+                'slug' => 'daihatsu-xenia',
+                'name' => 'Daihatsu Xenia',
+                'category' => 'mobil',
+                'transmission' => 'manual',
+                'seats' => 7,
+                'engine' => '1.3L',
+                'baggage' => '2 Koper',
+                'price_per_day' => 300000,
+                'rating' => 4.7,
+                'trips_count' => 520,
+                'image_url' => 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80',
+                'gallery' => [
+                    'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80',
+                ],
+                'description' => 'Daihatsu Xenia transmisi manual yang tangguh dan ekonomis untuk keluarga. Opsi hemat untuk perjalanan 7 penumpang.',
+                'benefits' => ['STNK', 'P3K & Segitiga Pengaman', 'Full Tank', 'Kondisi Kendaraan Terawat'],
+                'stock' => 0,
+                'is_available' => false,
+            ],
+        ];
+
+        foreach ($vehicles as $vehicle) {
+            Vehicle::updateOrCreate(['slug' => $vehicle['slug']], $vehicle);
+        }
+    }
+}
